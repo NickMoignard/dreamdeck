@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Fourth = () => {
     return (
-        <section>
+        <section id="four">
             <div>
                 <h1>PAGE</h1>
             </div>
