@@ -8,11 +8,10 @@ export const scrollmagic = () => {
 
    
             var ourScene = new ScrollMagic.Scene({
-                triggerElement: `#${v.id}`  //,
-                // triggerHook: 0.1,
-                // reverse: false
+                triggerElement: `#${v.id}`,
+                triggerHook: 1
             })
-            .setClassToggle(`#${v.id}`, 'fade-in') // add class
+            .setClassToggle(`#${v.id}`, 'fade-in-text') // add class
             .addTo(controller);    
         });
     });      
