@@ -14,7 +14,7 @@ import { Eleventh } from './pages/Eleventh';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App container">
       <main role="main">
         <First></First>
         <Second></Second>

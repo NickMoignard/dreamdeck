@@ -8,7 +8,7 @@ const pageStyle = {
     justifyContent: "center"
 };
 
-const Page = () => {
+const Page = (props) => {
     return <div style={pageStyle} className="row"><h1>PAGE</h1></div>;
 }; 
 
