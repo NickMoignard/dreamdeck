@@ -4,7 +4,7 @@ export const Eleventh = () => {
     return (
         <section id="eleven">
             <div>
-                <h1>PAGE</h1>
+                <h1>END</h1>
             </div>
         </section>
     );

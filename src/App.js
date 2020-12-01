@@ -14,19 +14,22 @@ import { Eleventh } from './pages/Eleventh';
 
 function App() {
   return (
-    <div className="App container">
+    <div className="App">
       <main role="main">
-        <First></First>
-        <Second></Second>
-        <Third></Third>
-        <Fourth></Fourth>
-        <Fifth></Fifth>
-        <Sixth></Sixth>
-        <Seventh></Seventh>
-        <Eighth></Eighth>
-        <Ninth></Ninth>
-        <Tenth></Tenth>
-        <Eleventh></Eleventh>
+        <div className="container">
+          <First></First>
+          <Second></Second>
+          <Third></Third>
+          <Fourth></Fourth>
+          <Fifth></Fifth>
+          <Sixth></Sixth>
+          <Seventh></Seventh>
+          <Eighth></Eighth>
+          <Ninth></Ninth>
+          <Tenth></Tenth>
+          <Eleventh></Eleventh>
+        </div>
+        
       </main>
     </div>
   );

@@ -1,16 +1,22 @@
 @import "./overrides.scss";
 @import "~bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins/_breakpoints";
+@font-face {
+    font-family: 'Bahnscrift';
+    src: url('./assets/fonts/BAHNSCHRIFT\ 1.TTF');
+}
+
 $green: #c7ff16;
+$red: #ff0000;
+$purple: #9146ff;
 $padding: 5px;
 $margin: 20px;
 $margin-box: $margin $margin $margin $margin;
 $padding-box: $padding $padding $padding $padding;
 @mixin graphHeight {
     height: 25vh;
-}
-
-p {
-    color: white;
 }
 
 .round {
@@ -29,6 +35,18 @@ p {
     }
 }
 
+.purple {
+    color: $purple;
+}
+
+.red {
+    color: $red;
+}
+
+.green {
+    color: $green;
+}
+
 .no-margin {
     margin: 0 !important;
 }
@@ -41,15 +59,40 @@ p {
     border: 5px solid $green;
 }
 
+.underline {
+    display: inline !important;
+    border-bottom: 1px solid $green;
+}
+
+.indented {
+    margin-left: 5vw;
+}
+
+.centerHack {
+    margin: auto;
+    width: 100%;
+}
+
 .stat {
     padding: 20px 10px;
     border-radius: 6px;
     border-width: 2px;
 }
 
+* {
+    font-family: 'Bahnscrift';
+}
+
 b {
     color: $green;
     font-weight: 800;
+}
+
+p {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: lighter !important;
+    // margin-bottom: 0;
 }
 
 body {
@@ -60,15 +103,12 @@ body {
 }
 
 section {
-    height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    h1 {
-        transition: all 1s linear;
-        opacity: 0;
-        color: white;
+    @include media-breakpoint-up(md) {
+        min-height: 100vh;
     }
 }
 
@@ -80,14 +120,12 @@ section {
     background-position: center;
 }
 
-#one {
-    h1 {
-        opacity: 1;
-    }
+img {
+    max-width: 100%;
 }
 
 .fade-in-text {
-    h1 {
+    .title {
         opacity: 1;
     }
 }
@@ -175,6 +213,16 @@ section {
     }
 }
 
+.title,
+.subtitle {
+    text-align: center;
+    display: block;
+}
+
+.title {}
+
+.subtitle {}
+
 // === KEYFRAMES ANIMATION ===
 //
 // @media (prefers-reduced-motion: no-preference) {
@@ -191,3 +239,56 @@ section {
 //     transform: rotate(360deg);
 //   }
 // }
+.margin-top {
+    margin-top: 4vh;
+}
+
+.title {
+    font-weight: 800;
+    transition: all 1s linear;
+    opacity: 0;
+    color: $green;
+}
+
+h1.title {
+    font-size: 7vh;
+    padding-bottom: 6vh;
+}
+
+h3 {
+    color: $green;
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.logo {
+    max-height: 3vh;
+}
+
+#four {
+    * {
+        text-align: center;
+    }
+}
+
+#five {
+    h4 {
+        font-size: 3vh;
+        line-height: 3vh;
+    }
+}
+
+#seven {
+    .gamemodes p {
+        display: block;
+        width: 100%;
+    }
+}
+
+#seven,
+#eight,
+#nine {
+    .title {
+        text-align: left;
+    }
+}
