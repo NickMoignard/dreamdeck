@@ -13,26 +13,30 @@ import { Eleventh } from './pages/Eleventh';
 
 
 function App() {
-  return (
-    <div className="App">
-      <main role="main">
-        <div className="container">
-          <First></First>
-          <Second></Second>
-          <Third></Third>
-          <Fourth></Fourth>
-          <Fifth></Fifth>
-          <Sixth></Sixth>
-          <Seventh></Seventh>
-          <Eighth></Eighth>
-          <Ninth></Ninth>
-          <Tenth></Tenth>
-          <Eleventh></Eleventh>
-        </div>
-        
-      </main>
-    </div>
-  );
+    return ( <
+        div className = "App" >
+        <
+        main role = "main" >
+        <
+        div className = "" >
+        <
+        First > < /First> <
+        Second > < /Second> <
+        Third > < /Third> <
+        Fourth > < /Fourth> <
+        Fifth > < /Fifth> <
+        Sixth > < /Sixth> <
+        Seventh > < /Seventh> <
+        Eighth > < /Eighth> <
+        Ninth > < /Ninth> <
+        Tenth > < /Tenth> <
+        Eleventh > < /Eleventh> <
+        /div>
+
+        <
+        /main> <
+        /div>
+    );
 }
 
 export default App;

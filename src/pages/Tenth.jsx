@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Tenth = () => {
     return (
-        <section id="ten">
+        <section id="ten"  className="container" >
             <div className="">
 
                 <h1>EXAMPLE PRODUCTION SCHEDULE</h1>

@@ -19,8 +19,245 @@ $padding-box: $padding $padding $padding $padding;
     height: 25vh;
 }
 
+* {
+    font-family: 'Bahnscrift';
+}
+
+b {
+    color: $green;
+    font-weight: 800;
+}
+
+p {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: lighter !important;
+    // margin-bottom: 0;
+}
+
+body {
+    background-image: url('assets/bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include media-breakpoint-up(md) {
+        min-height: 100vh;
+    }
+}
+
+#socialStats {
+    @include graphHeight;
+    background-image: url('assets/topology.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.page-left,
+.page-right {
+    height: 100vh;
+    // overflow: hidden;
+    position: relative;
+}
+
+.graph {
+    @include graphHeight;
+}
+
+.locality-stat {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    padding-top: $margin;
+    img {
+        width: 50%;
+    }
+    p {
+        width: 50%;
+        color: white;
+        display: inline-block;
+        text-align: center;
+        font-size: 22pt;
+        margin-bottom: 0;
+    }
+}
+
+// =========================================
+// ANIMATIONS
+// =========================================
+.fade-in-text {
+    opacity: 0;
+    transition: opacity 1sec ease;
+}
+
+.animate {
+    h1.fade-in-text,
+    h2.fade-in-text,
+    h3.fade-in-text,
+    h4.fade-in-text,
+    h5.fade-in-text,
+    h6.fade-in-text,
+    p.fade-in-text {
+        opacity: 1;
+    }
+}
+
+.come-in {
+    overflow-y: hidden;
+    transition: opacity 0.1s ease;
+    opacity: 0;
+}
+
+.animate .come-in {
+    opacity: 1;
+    transform: translateY(40vh);
+    animation: come-in 2s ease forwards;
+}
+
+.animate .come-out {
+    opacity: 0;
+    animation: come-out 1s ease forwards;
+}
+
+.animate .come-in:nth-child(odd),
+.animate .come-out:nth-child(odd) {
+    animation-duration: 1.7s;
+    /* So they look staggered */
+}
+
+.animate .come-in:first-child,
+.animate .come-out:first-child {
+    animation-duration: 1s;
+    /* So they look staggered */
+}
+
+.animate .come-in:last-child,
+.animate .come-out:last-child {
+    animation-duration: 2.2s;
+    /* So they look staggered */
+}
+
+@keyframes come-out {
+    from {
+        trasform: translateY(0);
+    }
+    to {
+        transform: translateY(-100vh)
+    }
+}
+
+@keyframes come-in {
+    from {
+        transform: translateY(40vh);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+// === KEYFRAMES ANIMATION ===
+//
+// @media (prefers-reduced-motion: no-preference) {
+//   .App-logo {
+//     animation: App-logo-spin infinite 20s linear;
+//   }
+// }
+//
+// @keyframes App-logo-spin {
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }
+// =========================================
+// TYPOGROPHY
+// =========================================
+.title,
+.subtitle {
+    text-align: center;
+    display: block;
+    color: $green;
+}
+
+.title {
+    font-size: 7vh;
+    font-weight: 800;
+}
+
+.subtitle {}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: white;
+}
+
+p {
+    font-size: 1.75rem;
+}
+
+.title {
+    transition: all 1s linear;
+    // opacity: 0;
+}
+
+.big-title {
+    font-size: 10vh;
+    line-height: 9vh;
+}
+
+h3 {
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.font-stroke {
+    font-size: 22pt;
+    font-weight: 800;
+    color: white;
+    -webkit-text-fill-color: white;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+// =========================================
+// IMAGES
+// =========================================
+.logo {
+    max-height: 3vh;
+}
+
+// =========================================
+// HELPER CLASSES
+// =========================================
+.thin-text {
+    font-weight: 600;
+}
+
 .round {
     border-radius: 1000px;
+}
+
+.inBlock {
+    display: inline-block;
 }
 
 .space-child-divs {
@@ -79,190 +316,123 @@ $padding-box: $padding $padding $padding $padding;
     border-width: 2px;
 }
 
-* {
-    font-family: 'Bahnscrift';
+.no-pr img {
+    transform: translateX(15px);
 }
 
-b {
-    color: $green;
-    font-weight: 800;
+.no-pl img {
+    transform: translateX(-15px);
 }
 
-p {
-    color: white;
-    font-size: 1.25rem;
-    font-weight: lighter !important;
-    // margin-bottom: 0;
+.padding-bottom-1 {
+    padding-bottom: 2vh;
 }
 
-body {
-    background-image: url('assets/bg.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+.padding-bottom-2 {
+    padding-bottom: 4vh;
 }
 
-section {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    @include media-breakpoint-up(md) {
-        min-height: 100vh;
-    }
+.padding-bottom-3 {
+    padding-bottom: 6vh;
 }
 
-#socialStats {
-    @include graphHeight;
-    background-image: url('assets/topology.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-}
-
-img {
-    max-width: 100%;
-}
-
-.fade-in-text {
-    .title {
-        opacity: 1;
-    }
-}
-
-.page-left,
-.page-right {
-    height: 100vh;
-    // overflow: hidden;
-    position: relative;
-}
-
-.graph {
-    @include graphHeight;
-}
-
-.topology-div {
-    height: 100vh;
-    width: 50vw;
-    position: static;
-    right: 0;
-    top: 0;
-    overflow: hidden;
-    background-image: url('assets/topology.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: right;
-}
-
-.text-block {
-    margin: auto;
-    width: 60%;
-    position: absolute;
-    top: 50vh;
-    transform: translateY(-50%);
-}
-
-.locality-stat {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    padding-top: $margin;
-    img {
-        width: 50%;
-    }
-    p {
-        width: 50%;
-        color: white;
-        display: inline-block;
-        text-align: center;
-        font-size: 22pt;
-        margin-bottom: 0;
-    }
-}
-
-.social-logo-stat {
-    display: flex;
-    align-items: center;
-    margin: auto;
-    width: 20%;
-    .logo-container {
-        padding: 3.5vh;
-        display: inline-block;
-        background-color: black;
-    }
-    .logo-container img {
-        height: 2.5vh;
-    }
-}
-
-.font-stroke {
-    font-size: 22pt;
-    font-weight: 800;
-    color: white;
-    -webkit-text-fill-color: white;
-    /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
-}
-
-.social-logo-stat:nth-of-type(1) {
-    .logo-container {
-        padding-left: 3vh;
-        padding-right: 3vh;
-    }
-}
-
-.title,
-.subtitle {
-    text-align: center;
-    display: block;
-}
-
-.title {}
-
-.subtitle {}
-
-// === KEYFRAMES ANIMATION ===
-//
-// @media (prefers-reduced-motion: no-preference) {
-//   .App-logo {
-//     animation: App-logo-spin infinite 20s linear;
-//   }
-// }
-//
-// @keyframes App-logo-spin {
-//   from {
-//     transform: rotate(0deg);
-//   }
-//   to {
-//     transform: rotate(360deg);
-//   }
-// }
 .margin-top {
     margin-top: 4vh;
 }
 
-.title {
-    font-weight: 800;
-    transition: all 1s linear;
-    opacity: 0;
-    color: $green;
+// =======================================
+// SITE SPECIFIC
+// =======================================
+.caseStudyLeft {
+    padding-right: 40px !important;
+    h4 {
+        right: 40px;
+    }
 }
 
-h1.title {
-    font-size: 7vh;
-    padding-bottom: 6vh;
+.caseStudyRight {
+    h4 {
+        right: 0;
+    }
 }
 
-h3 {
-    color: $green;
-    font-size: 3vh;
-    font-weight: bold;
+.pageLeft p,
+.pageLeft h3 {
+    padding-right: 7vw !important;
 }
 
-.logo {
-    max-height: 3vh;
+.big-p {
+    font-size: 2vh;
+}
+
+// =======================================
+// PAGE SPECIFIC
+// =======================================
+#one {
+    h1,
+    h2,
+    h3 {
+        width: 100%;
+        display: block;
+    }
+    .topology-div {
+        height: 100vh;
+        width: 50vw;
+        position: static;
+        right: 0;
+        top: 0;
+        overflow: hidden;
+        background-image: url('assets/topology.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: right;
+    }
+    .text-block {
+        margin: auto;
+        position: absolute;
+        top: 50vh;
+        width: 50vw;
+        left: 0;
+        transform: translateY(-50%) translateX(-25%);
+    }
+}
+
+#two {
+    .social-logo-stat {
+        display: flex;
+        align-items: center;
+        margin: auto;
+        width: 20%;
+        .logo-container {
+            padding: 3.5vh;
+            display: inline-block;
+            background-color: black;
+        }
+        .logo-container img {
+            height: 2.5vh;
+        }
+    }
+    .social-logo-stat:nth-of-type(1) {
+        .logo-container {
+            padding-left: 3vh;
+            padding-right: 3vh;
+        }
+    }
+    .left {
+        img {
+            max-height: 12vh;
+        }
+        h3.thin-text {
+            padding-left: 5px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+#three {
+    h2 {
+        color: white;
+    }
 }
 
 #four {
@@ -275,6 +445,7 @@ h3 {
     h4 {
         font-size: 3vh;
         line-height: 3vh;
+        position: absolute;
     }
 }
 

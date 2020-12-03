@@ -6,7 +6,7 @@ import pageEight1 from '../assets/pageEight1.png'
 
 export const Eighth = () => {
     return (
-        <section id="eight">
+        <section id="eight"  className="container" >
             
             <div className="row">
                 <div className="col-12">

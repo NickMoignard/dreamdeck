@@ -7,7 +7,7 @@ import pageNine1 from '../assets/pageNine1.png'
 
 export const Ninth = () => {
     return (
-        <section id="nine">
+        <section id="nine"  className="container" >
             
             <div className="row">
                 <div className="col-12">

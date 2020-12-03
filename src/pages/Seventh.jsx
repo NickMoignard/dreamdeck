@@ -3,7 +3,7 @@ import React from 'react';
 
 export const Seventh = () => {
     return (
-        <section id="seven">
+        <section id="seven"  className="container" >
             <div className="row gamemodes">
                 
                 <div className="col-12">

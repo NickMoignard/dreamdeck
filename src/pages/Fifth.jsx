@@ -16,24 +16,24 @@ import { Graph } from '../components/Graph';
 
 export const Fifth = () => {
     return (
-        <section id="five">
+        <section id="five"  className="container" >
             
             <div className="row">
                 <div className="col-12">
                     <h1 className="title">DREAMSTREAMS</h1>
                 </div>
                 <div className="col-6">
-                    <div className="row">
+                    <div className="row caseStudyLeft">
                         <img className="logo" src={ytLogo} alt=""/>
-                        <h4><span className="red">YOUTUBE STREAM CASE STUDY</span> - <span className="green">SEP 2020</span></h4>
+                        <h4 className="text-right inBlock"><span className="red">STREAM CASE STUDY</span> - <span className="green">SEP 2020</span></h4>
                     </div>
                     <Graph svg={concurrentViewers} />
                     <Graph svg={audienceRetention} />
                 </div>
-                <div className="col-6">
-                    <div className="row">
+                <div className="col-6 caseStudyRight">
+                    <div className="row ">
                         <img className="logo" src={twitchLogo} alt=""/>
-                        <h4><span className="purple">TWICH STREAM CASE STUDY</span> - <span className="green">SEP 2020</span></h4>
+                        <h4 className=" text-right inBlock"><span className="purple">STREAM CASE STUDY</span> - <span className="green">SEP 2020</span></h4>
                     </div>
                     <div className="row">
                         <p>The Dream Team SMP streamed their online adventures to a combined live audience of <span id="live-audience" className="inline-stat"></span> on Twitch TV; with Dream contributing over <span id="percent-viewership" className="inline-stat"></span> of viewership.</p>

@@ -10,7 +10,7 @@ const sharedCoreValues = [
 
 export const Fourth = () => {
     return (
-        <section id="four">
+        <section id="four"  className="container" >
             
             <div className="row scv-head">
                 <div className="col-12">
