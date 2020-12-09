@@ -13,7 +13,7 @@ export const Fourth = () => {
         <section id="four"  className="container" >
             
             <div className="row scv-head">
-                <div className="col-12">
+                <div className="col-12 padding-bottom-3">
                     <h1 className="title">SHARED CORE VALUES</h1>
                 </div>
                 <div className="col-6">
@@ -25,7 +25,7 @@ export const Fourth = () => {
                 </div>    
  
                 <div className="col-6">
-                    <h3 className="underline">MCG PILLARS</h3>
+                    <h3 className="underline ">MCG PILLARS</h3>
                     <p className="margin-top">COMMUNITY DRIVEN, COLLABORATIONAL, PERSONALITY FOCUSED</p>
                     <p>INTERACTIVE EVENT FUELING CREATIVE IDEAS &amp; CONTENT</p>
                     <p>ALL INCLUSIVE (GAMING OR NON GAMING CREATORS)</p>

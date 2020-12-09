@@ -8,7 +8,7 @@ export const scrollmagic = () => {
                 triggerElement: '#one',
                 triggerHook: 1
             })
-            .setClassToggle('#one', 'fade-in-text')
+            .setClassToggle('#one', 'chef')
             .addTo(controller);
 
 

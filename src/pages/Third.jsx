@@ -5,23 +5,19 @@ export const Third = () => {
     return (
         <section id="three" className="container" >
             <div className="row">
-                <div className="row">
-                    <div className="col-12"><h1 className="title" >DREAM X YOUTUBE MCG</h1></div>
-                </div>
+                    <div className="col-12 padding-bottom-1"><h1 className="title" >DREAM X YOUTUBE MCG</h1></div>
+
                 <div className="row">
 
                 </div>
                 <div className="row">
-                    <div className="lg-col-4 md-col-6 xl-col-6 xxl-col-6">
+                    <div className="col-4">
                         <img className="bordered" src={dreamFanArt} alt="" />
                     </div>
                 
-                    <div className="md-col-6 lg-col-8" >
+                    <div className="col-8" >
                         <p>Dream MCC at its core is about <b>bringing gamers and communities together</b>, to create an all inclusive broadend community within itself that allows the freedom of belonging, to all creators involved.</p>
                         <br/>
-                    </div>
-                    
-                    <div className="md-col-12 lg-col-8">
                         <p>This commmunity focused live event with Dream at its center garners large scale creators; new or experienced, to establish and catalyse the Minecraft community on <b>Youtube</b> as the <b>cornerstone platform</b>.</p>
                         <br/>
                         <p>With a premium spectacle of competition, ever changing event modes to stay ahead of faming and mainstream trends, the Dream MCC will encapsulate the unique creative elements in his videos to <b>transcend into an interactive powerhouse </b>of live entertainment.</p>

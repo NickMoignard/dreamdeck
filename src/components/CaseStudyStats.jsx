@@ -3,7 +3,7 @@ import CountUp from 'react-countup';
 
 export const CaseStudyStats = (props) => {
     return (
-        <div>
+        <div id="caseStudyStats" className="padding-bottom-2">
             <div className="row">
                 <div className="col-6">
                     <h6>STARTED</h6>

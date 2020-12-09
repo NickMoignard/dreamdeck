@@ -10,18 +10,18 @@ export const Ninth = () => {
         <section id="nine"  className="container" >
             
             <div className="row">
-                <div className="col-12">
+                <div className="col-12 padding-bottom-3">
                     <p className="study-title">CASE STUDY 2</p>
                     <h1 className="title">DREAM x TUBBO - LIVE DEAL OR NO DEAL</h1>
                 </div>
                 <div className="col-6">
                     <CaseStudyStats start="SUN, OCT 25, 18:00" hours={238718} streamDuration="1 HOUR 44 MINUTES" peakViewers={156002} avgConcurrent={137722} liveViews={131882} />
-                    <img src={gameplay} className="bordered" alt=""/>    
+                    <img src={gameplay} className="mineChampScreen bordered" alt=""/>    
                 </div>
                 <div className="col-6">
                     <Graph svg={pageNine1} />
-                    <p>As a community hosted event, the Minecraft Championship Series is a recurring gathering of the community's biggest streamers &amp; content creators. Following the formation of 10 teams of four, the event begins with each group going head to head in a series of minigames putting each competitor's skills to the test.</p>
-                    <p>Dream's involvement in the event is pivotal, with his individual broadcast accounting for over a third of the event's overall viewership.</p>
+                    <p className="margin-top">Drawing upon his talents in designing &amp; developing unique Minecraft gamemodes, Dream recreats the globally renowned game show model 'Deal or No Deal' within the Minecraft universe.</p>
+                    <p className="margin-top">Hosted live on Twitch alongside co-host Tubbo, the duo demonstrates their limitless creative aptitiude &amp; talented development skills, producing a truly unique experience.</p>
                 </div>
             </div>
         </section>

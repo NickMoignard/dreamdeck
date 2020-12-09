@@ -11,6 +11,7 @@
 $green: #c7ff16;
 $red: #ff0000;
 $purple: #9146ff;
+$grey: #979797;
 $padding: 5px;
 $margin: 20px;
 $margin-box: $margin $margin $margin $margin;
@@ -58,6 +59,10 @@ section {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    left: 15px;
 }
 
 img {
@@ -73,6 +78,9 @@ img {
 
 .graph {
     @include graphHeight;
+    img {
+        width: 100%;
+    }
 }
 
 .locality-stat {
@@ -123,7 +131,7 @@ img {
 .animate .come-in {
     opacity: 1;
     transform: translateY(40vh);
-    animation: come-in 2s ease forwards;
+    animation: come-in 1s ease forwards;
 }
 
 .animate .come-out {
@@ -133,7 +141,7 @@ img {
 
 .animate .come-in:nth-child(odd),
 .animate .come-out:nth-child(odd) {
-    animation-duration: 1.7s;
+    animation-duration: 1s;
     /* So they look staggered */
 }
 
@@ -145,7 +153,7 @@ img {
 
 .animate .come-in:last-child,
 .animate .come-out:last-child {
-    animation-duration: 2.2s;
+    animation-duration: 1s;
     /* So they look staggered */
 }
 
@@ -229,13 +237,17 @@ h3 {
 }
 
 .font-stroke {
-    font-size: 22pt;
-    font-weight: 800;
+    font-size: 30pt;
+    font-weight: 400;
     color: white;
+    -moz-text-fill-color: white;
     -webkit-text-fill-color: white;
     /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 2px;
+    -moz-text-stroke-width: 4px;
+    -webkit-text-stroke-width: 4px;
+    -moz-text-stroke-color: black;
     -webkit-text-stroke-color: black;
+    paint-order: stroke fill;
 }
 
 // =========================================
@@ -243,6 +255,37 @@ h3 {
 // =========================================
 .logo {
     max-height: 3vh;
+}
+
+.social-logo-stat {
+    display: flex;
+    align-items: center;
+    margin: 0 0 auto 0;
+    width: 25%;
+    position: relative;
+     :after {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+    }
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+#socialStats {
+    h2 {
+        width: 25%;
+        text-align: center;
+        transform: translateY(40%);
+    }
 }
 
 // =========================================
@@ -310,12 +353,6 @@ h3 {
     width: 100%;
 }
 
-.stat {
-    padding: 20px 10px;
-    border-radius: 6px;
-    border-width: 2px;
-}
-
 .no-pr img {
     transform: translateX(15px);
 }
@@ -332,12 +369,16 @@ h3 {
     padding-bottom: 4vh;
 }
 
+.padding-top-2 {
+    padding-top: 4vh;
+}
+
 .padding-bottom-3 {
     padding-bottom: 6vh;
 }
 
 .margin-top {
-    margin-top: 4vh;
+    margin-top: 4vh !important;
 }
 
 // =======================================
@@ -361,8 +402,51 @@ h3 {
     padding-right: 7vw !important;
 }
 
+.sources {
+    font-size: 1rem;
+    color: $grey;
+    text-align: left !important;
+}
+
 .big-p {
     font-size: 2vh;
+}
+
+.stat {
+    padding: 20px 20px;
+    border-radius: 6px;
+    border-width: 2px;
+    max-height: 100px;
+}
+
+div.stat * {
+    text-align: center;
+    margin: auto 0;
+    height: 0vh;
+}
+
+div.stat .rank {
+    display: inline-block;
+    width: 40%;
+    font-size: 30pt;
+    color: $green;
+}
+
+div.stat .rankName {
+    padding-left: 5px;
+    display: inline-block;
+    width: 60%;
+    font-size: 0.75rem;
+}
+
+#caseStudyStats {
+    h6 {
+        color: $green;
+    }
+}
+
+.mineChampScreen {
+    width: 85%;
 }
 
 // =======================================
@@ -398,26 +482,6 @@ h3 {
 }
 
 #two {
-    .social-logo-stat {
-        display: flex;
-        align-items: center;
-        margin: auto;
-        width: 20%;
-        .logo-container {
-            padding: 3.5vh;
-            display: inline-block;
-            background-color: black;
-        }
-        .logo-container img {
-            height: 2.5vh;
-        }
-    }
-    .social-logo-stat:nth-of-type(1) {
-        .logo-container {
-            padding-left: 3vh;
-            padding-right: 3vh;
-        }
-    }
     .left {
         img {
             max-height: 12vh;
@@ -430,6 +494,9 @@ h3 {
 }
 
 #three {
+    h1 {
+        text-align: center;
+    }
     h2 {
         color: white;
     }
@@ -438,6 +505,15 @@ h3 {
 #four {
     * {
         text-align: center;
+    }
+    h3 {
+        color: $green;
+    }
+    p {
+        padding-bottom: 5vh;
+        width: 75%;
+        margin: 0 auto;
+        font-size: 20pt;
     }
 }
 
@@ -454,6 +530,9 @@ h3 {
         display: block;
         width: 100%;
     }
+    h3 {
+        color: $green !important;
+    }
 }
 
 #seven,
@@ -461,5 +540,11 @@ h3 {
 #nine {
     .title {
         text-align: left;
+    }
+}
+
+#ten {
+    h3 {
+        color: $green;
     }
 }

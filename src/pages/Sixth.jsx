@@ -11,11 +11,14 @@ export const Sixth = () => {
     return (
         <section id="six"  className="container" >
             <div className="row">
+
                 <div className="col-6 pageLeft">
                     <h1 className="title text-left">EVENT STRUCTURE</h1>
-                    <p className="big-p">Dream battles the internet's biggest creators in an action packed, Minecraft extravaganza; Layered with a multitude of challenges to see who really is Minecraft's best gamer.</p>
+                    <p className="big-p padding-top-2">Dream battles the internet's biggest creators in an action packed, Minecraft extravaganza; Layered with a multitude of challenges to see who really is Minecraft's best gamer.</p>
                     <h3 className="subtitle text-left margin-top">TEAM INFRASTRUCTURE</h3>
-                    <p className="big-p margin-top">With his own coding experience, Dream will be hands on the entire build, from development to final production process.<br/>To make everything possible we need; 4 builders, 2 Developers and 2 Producers.<br/>Managment of the staff and overall project, production and design will onto Misfits Management Group (MMG).</p>
+                    <p className="big-p margin-top">With his own coding experience, Dream will be hands on the entire build, from development to final production process.</p>
+                    <p className="big-p">To make everything possible we need; 4 builders, 2 Developers and 2 Producers.</p>
+                    <p className="big-p">Managment of the staff and overall project, production and design will onto Misfits Management Group (MMG).</p>
                 </div>
                 <div className="col-6">
                     <div className="row margin-top">
