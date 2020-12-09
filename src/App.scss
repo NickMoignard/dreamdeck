@@ -721,6 +721,10 @@ div.stat .rankName {
     #twitchStudyAbout p {
         font-size: 0.75rem;
     }
+    .heightFixMob {
+        max-height: 20vh;
+        margin: 0 auto;
+    }
 }
 
 #pageTwoStats {

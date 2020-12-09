@@ -48,7 +48,7 @@ export const Fifth = () => {
                         <p>The Dream Team SMP streamed their online adventures to a combined live audience of <span id="live-audience" className="inline-stat"></span> on Twitch TV; with Dream contributing over <span id="percent-viewership" className="inline-stat"></span> of viewership.</p>
                     </div>
                     <div className="row">
-                        <img src={streamStats} alt=""/>
+                        <img className="heightFixMob" src={streamStats} alt=""/>
                     </div>
                 </div>
             </div>
