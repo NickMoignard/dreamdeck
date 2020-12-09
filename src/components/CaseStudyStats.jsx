@@ -5,11 +5,11 @@ export const CaseStudyStats = (props) => {
     return (
         <div id="caseStudyStats" className="padding-bottom-2">
             <div className="row">
-                <div className="col-6">
+                <div className="col-lg-6 col-md-12 ">
                     <h6>STARTED</h6>
                     <p>{props.start}</p>
                 </div>
-                <div className="col-6">
+                <div className="col-lg-6 col-md-12 ">
                     <h6>HOURS WATCHED</h6>
                     <p>
                         <CountUp end={props.hours} />
@@ -17,21 +17,21 @@ export const CaseStudyStats = (props) => {
                </div>
             </div>
             <div className="row">
-                <div className="col-6">
+                <div className="col-lg-6 col-md-12 ">
                     <h6>STREAM DURATION</h6>
                     <p>{props.streamDuration}</p>
                 </div>
-                <div className="col-6">
+                <div className="col-lg-6 col-md-12 ">
                     <h6>PEAK VIEWERS</h6>
                     <p><CountUp end={props.peakViewers} /></p>
                 </div>                
             </div>
             <div className="row">
-                <div className="col-6">
+                <div className="col-lg-6 col-md-12 ">
                     <h6>AVG. CONCURRENT VIEWERS</h6>
                     <p><CountUp end={props.avgConcurrent} /></p>
                 </div>    
-                <div className="col-6">
+                <div className="col-lg-6 col-md-12 ">
                     <h6>TOTAL LIVE VIEWS</h6>
                     <p><CountUp end={props.liveViews} /></p>
                 </div>

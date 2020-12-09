@@ -206,8 +206,6 @@ img {
     font-weight: 800;
 }
 
-.subtitle {}
-
 h1,
 h2,
 h3,
@@ -285,6 +283,180 @@ h3 {
         width: 25%;
         text-align: center;
         transform: translateY(40%);
+    }
+}
+
+// =======================================
+// SITE SPECIFIC
+// =======================================
+.caseStudyLeft {
+    padding-right: 40px !important;
+    h4 {
+        right: 40px;
+    }
+}
+
+.caseStudyRight {
+    h4 {
+        right: 0;
+    }
+}
+
+.pageLeft p,
+.pageLeft h3 {
+    padding-right: 7vw !important;
+}
+
+.sources {
+    font-size: 1rem;
+    color: $grey;
+    text-align: left !important;
+}
+
+.big-p {
+    font-size: 2vh;
+}
+
+.stat {
+    padding: 20px 20px;
+    border-radius: 6px;
+    border-width: 2px;
+    max-height: 100px;
+}
+
+div.stat * {
+    text-align: center;
+    margin: auto 0;
+    height: 0vh;
+}
+
+div.stat .rank {
+    display: inline-block;
+    width: 40%;
+    font-size: 30pt;
+    color: $green;
+}
+
+div.stat .rankName {
+    padding-left: 5px;
+    display: inline-block;
+    width: 60%;
+    font-size: 0.75rem;
+}
+
+#caseStudyStats {
+    h6 {
+        color: $green;
+    }
+}
+
+.mineChampScreen {
+    width: 85%;
+}
+
+// =======================================
+// PAGE SPECIFIC
+// =======================================
+#one {
+    h1,
+    h2,
+    h3 {
+        width: 100%;
+        display: block;
+    }
+    .topology-div {
+        height: 100vh;
+        width: 50vw;
+        position: static;
+        right: 0;
+        top: 0;
+        overflow: hidden;
+        background-image: url('assets/topology.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: right;
+    }
+    .text-block {
+        margin-top: 50vh;
+        transform: translateY(-50%);
+    }
+    @media only screen and (min-width: 590px) {
+        .text-block {
+            margin: auto;
+            position: absolute;
+            top: 50vh;
+            width: 50vw;
+            left: 0;
+            transform: translateY(-50%) translateX(-25%);
+        }
+    }
+}
+
+#two {
+    .left {
+        img {
+            max-height: 12vh;
+        }
+        h3.thin-text {
+            padding-left: 5px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+#three {
+    h1 {
+        text-align: center;
+    }
+    h2 {
+        color: white;
+    }
+}
+
+#four {
+    * {
+        text-align: center;
+    }
+    h3 {
+        color: $green;
+    }
+    p {
+        padding-bottom: 5vh;
+        width: 75%;
+        margin: 0 auto;
+        font-size: 20pt;
+    }
+}
+
+#five {
+    h4 {
+        font-size: 3vh;
+        line-height: 3vh;
+        position: absolute;
+    }
+}
+
+#seven {
+    .gamemodes p {
+        display: block;
+        width: 100%;
+    }
+    h3 {
+        color: $green !important;
+    }
+}
+
+#seven,
+#eight,
+#nine {
+    .title {
+        text-align: left;
+    }
+}
+
+#ten {
+    h3 {
+        color: $green;
     }
 }
 
@@ -381,170 +553,176 @@ h3 {
     margin-top: 4vh !important;
 }
 
-// =======================================
-// SITE SPECIFIC
-// =======================================
-.caseStudyLeft {
-    padding-right: 40px !important;
-    h4 {
-        right: 40px;
+.socialStatsTitle {
+    position: absolute;
+    top: -7vh;
+}
+
+@media only screen and (min-width: 1200px) {
+    .desktop-hide {
+        display: none;
     }
 }
 
-.caseStudyRight {
-    h4 {
-        right: 0;
+@media only screen and (max-width: 1920px) {
+    #pageTwoRight {
+        height: 65vh;
     }
 }
 
-.pageLeft p,
-.pageLeft h3 {
-    padding-right: 7vw !important;
-}
-
-.sources {
-    font-size: 1rem;
-    color: $grey;
-    text-align: left !important;
-}
-
-.big-p {
-    font-size: 2vh;
-}
-
-.stat {
-    padding: 20px 20px;
-    border-radius: 6px;
-    border-width: 2px;
-    max-height: 100px;
-}
-
-div.stat * {
-    text-align: center;
-    margin: auto 0;
-    height: 0vh;
-}
-
-div.stat .rank {
-    display: inline-block;
-    width: 40%;
-    font-size: 30pt;
-    color: $green;
-}
-
-div.stat .rankName {
-    padding-left: 5px;
-    display: inline-block;
-    width: 60%;
-    font-size: 0.75rem;
-}
-
-#caseStudyStats {
-    h6 {
-        color: $green;
+@media only screen and (max-width: 1199px) {
+    .mb-hide {
+        display: none;
     }
-}
-
-.mineChampScreen {
-    width: 85%;
-}
-
-// =======================================
-// PAGE SPECIFIC
-// =======================================
-#one {
-    h1,
-    h2,
-    h3 {
-        width: 100%;
-        display: block;
-    }
-    .topology-div {
-        height: 100vh;
-        width: 50vw;
-        position: static;
-        right: 0;
-        top: 0;
-        overflow: hidden;
-        background-image: url('assets/topology.png');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: right;
-    }
-    .text-block {
-        margin: auto;
-        position: absolute;
-        top: 50vh;
-        width: 50vw;
-        left: 0;
-        transform: translateY(-50%) translateX(-25%);
-    }
-}
-
-#two {
-    .left {
-        img {
-            max-height: 12vh;
-        }
-        h3.thin-text {
-            padding-left: 5px;
-            margin-bottom: 0;
-        }
-    }
-}
-
-#three {
-    h1 {
-        text-align: center;
-    }
-    h2 {
-        color: white;
-    }
-}
-
-#four {
-    * {
-        text-align: center;
-    }
-    h3 {
-        color: $green;
-    }
-    p {
-        padding-bottom: 5vh;
-        width: 75%;
-        margin: 0 auto;
-        font-size: 20pt;
-    }
-}
-
-#five {
-    h4 {
-        font-size: 3vh;
-        line-height: 3vh;
-        position: absolute;
-    }
-}
-
-#seven {
-    .gamemodes p {
-        display: block;
-        width: 100%;
-    }
-    h3 {
-        color: $green !important;
-    }
-}
-
-#seven,
-#eight,
-#nine {
     .title {
-        text-align: left;
+        font-size: 3rem;
+    }
+    .subtitle {
+        font-size: 1.75rem;
+    }
+    .big-p,
+    p {
+        font-size: 1.25rem;
+    }
+    #caseStudyStats {
+        h6,
+        p {
+            text-align: center;
+        }
+    }
+    section {
+        margin-top: 10vh;
+    }
+    #one {
+        margin-top: 0;
+    }
+    #ten {
+        h3 {
+            font-size: 1.25rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+    #two {
+        .stat {
+            h4,
+            p {
+                height: 100%;
+            }
+            h4 {
+                font-size: 1.75rem;
+            }
+            p {
+                font-size: 0.75rem;
+                transform: translateY(-17%);
+            }
+        }
+    }
+    #pageTwoStats.space-child-divs {
+        >div {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+         :nth-child(2) {
+            margin-bottom: 0;
+            margin-top: 20px;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+    }
+    .padding-bottom-2 {
+        padding-bottom: 10px;
+    }
+    .container {
+        max-width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    #two .stat {
+        h4,
+        p {
+            transform: translateY(-25%);
+        }
+    }
+    #socialStatsContainer {
+        margin-top: 15vh;
+    }
+    #socialStats {
+        border-radius: 10px;
+        height: 20vh;
+        right: 30px;
+        left: 30px;
+        .socialStatsTitle {
+            width: 100%;
+        }
+        h2 {
+            height: 0;
+            font-size: 15pt;
+            transform: translateY(2.5vh);
+        }
+    }
+    .graph {
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+    #pageTwoRight {
+        height: 60vh;
+    }
+    .mineChampScreen {
+        margin: 7.5%;
+    }
+    #six .pageLeft {
+        h1.text-left,
+        h3,
+        p {
+            text-align: center !important;
+        }
+    }
+    #twitchStudyAbout {
+        padding-top: 5vh;
+    }
+    .caseStudyRight h4 {
+        right: unset;
+    }
+    .pageLeft {
+        p,
+        h3 {
+            padding-right: 0 !important;
+        }
     }
 }
 
-#ten {
-    h3 {
-        color: $green;
+@media only screen and (max-width: 589px) {
+    .graph {
+        margin-top: 5vh;
+        height: 15vh;
     }
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .locality-stat p {
+        padding-left: 4px;
+    }
+    .mb-hide {
+        display: none;
+    }
+    body {
+        // background-size: cover;
+        background-color: #0C0C0C;
+        // background-attachment: fixed
+    }
+    #four .scv-head {
+        p {
+            font-size: 0.75rem;
+        }
+    }
+    #twitchStudyAbout p {
+        font-size: 0.75rem;
+    }
+}
+
+#pageTwoStats {
+    overflow-x: hidden;
 }

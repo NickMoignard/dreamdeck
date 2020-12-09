@@ -1,11 +1,5 @@
 import React from 'react';
 
-const sharedCoreValues = [
-    { a: "BUILDING OUTSTANDING COMMUNITIES", b: "COMMUNITY DRIVEN, COLLABORATIONAL, PERSONALITY FOCUSED" },
-    { a: "FREEDOM OF EXPRESSION", b: "INTERACTIVE EVENT FUELING CREATIVE IDEAS & CONTENT" },
-    { a: "FREEDOM OF BELONGING", b: "ALL INCLUSIVE (GAMING OR NON GAMING CREATORS)" },
-    { a: "BEING THE NO.1 STREAMING PLATFORM", b: "THE LARGEST LIVE STREAMED GAMING EVENT FOR CONTENT CREATORS" }
-];
 
 
 export const Fourth = () => {
@@ -35,15 +29,4 @@ export const Fourth = () => {
             </div>  
         </section>
     );
-};
-
-
-const quickRow = (value, pillar) => {
-    return( 
-        <div className="row shared-core-values">
-            <div className="col-4 youtube-value">{ value }</div>
-            <div className="col-4 svg-line"></div>
-            <div className="col-4 mcg-pillar">{ pillar }</div>
-        </div>
-     );
 };

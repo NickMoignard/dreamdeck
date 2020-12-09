@@ -7,7 +7,7 @@ export const Tenth = () => {
 
                 <h1 className="title padding-bottom-2">EXAMPLE PRODUCTION SCHEDULE</h1>
                 <div className="">
-                    <div class="row">
+                    <div className="row">
                         <div className="col-6 padding-bottom-2">
                             <h3 className="">SATURDAY APRIL 3RD 2021;</h3>
                             <p className="">FALL GUYS IN MINECRAFT; MUCH MORE BEGINNER FRIENDLY, CAN INVOLVE UP TO 50 CREATORS OF ANY SKILL LEVEL</p>
@@ -17,7 +17,7 @@ export const Tenth = () => {
                             <p className="">AMONG US IN MINECRAFT; BEGINNER FRIENDLY, ABLE TO INVOLVE A LOT MORE CREATORS LITTLE BARRIER TO ENTRY</p>
                         </div>
                     </div>
-                    <div class="row">
+                    <div className="row">
                         <div className="col-6 padding-bottom-2">
                             <h3 className="">SATURDAY APRIL 10th;</h3>
                             <p className="">N/A - BUILD WEEK</p>
@@ -27,7 +27,7 @@ export const Tenth = () => {
                             <p className="">N/A - BUILD WEEK</p>
                         </div>
                     </div>
-                    <div class="row">
+                    <div className="row">
                         <div className="col-6 padding-bottom-2">
                             <h3 className="">SATURDAY APRIL 3RD 2021;</h3>
                             <p className="">FALL GUYS IN MINECRAFT; MUCH MORE BEGINNER FRIENDLY, CAN INVOLVE UP TO 50 CREATORS OF ANY SKILL LEVEL</p>
